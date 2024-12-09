@@ -2,22 +2,21 @@ importScripts('https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js'
 importScripts('https://www.gstatic.com/firebasejs/11.0.2/firebase-messaging-compat.js');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB8fF4Q-Hb2J6Iux-HzSywq02b44TbTKv4",
-  authDomain: "text-push-ef788.firebaseapp.com",
-  projectId: "text-push-ef788",
-  storageBucket: "text-push-ef788.firebasestorage.app",
-  messagingSenderId: "545938878715",
-  appId: "1:545938878715:web:13457b1a3efb806d1a405e",
-  measurementId: "G-QV67445TSC"
+  apiKey: "AIzaSyDTR2uPU3EQJyuTEBApIZJxZULBjbKK09k",
+  authDomain: "test-push-cc9bd.firebaseapp.com",
+  projectId: "test-push-cc9bd",
+  storageBucket: "test-push-cc9bd.firebasestorage.app",
+  messagingSenderId: "859424279036",
+  appId: "1:859424279036:web:e50ff0876eecce12cb0a79",
+  measurementId: "G-EFCWZQJZ3J"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging(app);
 
 messaging.onBackgroundMessage((payload) => {
-    console.log('Mensaje en segundo plano:', payload);
-    const { title, body, icon } = payload.notification;
-    self.registration.showNotification(title, { body, icon });
+  console.log('Mensaje en segundo plano:', payload);
+  const { title, body, icon } = payload.notification;
+  self.registration.showNotification(title, { body, icon });
 });
 
- 

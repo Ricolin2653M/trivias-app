@@ -1,73 +1,45 @@
 {
-    "name": "Mi Aplicación Trivia",
-    "short_name": "TriviaApp",
-    "description": "Una aplicación de trivias progresiva",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#6a0dad",
-    "form_factor": "wide",
-    "display_override": ["window-controls-overlay", "standalone"],
-
-    "icons": [
-      {
-        "src": "/icons/file.ico",
-        "sizes": "72x72",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/icons/file1.ico",
-        "sizes": "96x96",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/icons/file2.ico",
-        "sizes": "128x128",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/icons/file3.ico",
-        "sizes": "144x144",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/icons/file4.ico",
-        "sizes": "152x152",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/icons/file5.ico",
-        "sizes": "192x192",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/icons/file.png",
-        "sizes": "72x72",
-        "type": "image/png",
-        "purpose": "any"
-      }
-    ],
-
-    "screenshots": [
-  {
-    "src": "/screenshots/ss1.png",
-    "sizes": "1280x800",
-    "type": "image/png",
-    "form_factor": "wide"
-
-  },
-  {
-    "src": "/screenshots/ss2.png",
-    "sizes": "1280x800",
-    "type": "image/png"
-  },
-  {
-    "src": "/screenshots/ss3.png",
-    "sizes": "1280x800",
-    "type": "image/png"
-
-  }
-]
-
-  }
-  
+  "name": "Mi Aplicación Trivia",
+  "short_name": "TriviaApp",
+  "description": "Una aplicación de trivias progresiva",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6a0dad",
+  "form_factor": "wide",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "icons": [
+    {
+      "src": "icons/logo-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/wide-screenshot.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "screenshots/mobile-screenshot.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}
