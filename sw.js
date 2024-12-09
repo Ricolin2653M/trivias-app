@@ -57,7 +57,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
 
-    if (url.href.includes('uri')) {
+    if (url.href.includes('https://trivias-api.vercel.app/api/resultados')) {
         event.respondWith(manejoApiResultados(CACHE_DYNAMIC, event.request));
         return;
     }
@@ -83,6 +83,11 @@ self.addEventListener('fetch', (event) => {
 
 self.addEventListener('sync', event => {
     if (event.tag === 'nuevo-resultado') {
-        event.waitUntil(postearNotas());
+        console.log('Sincronización en segundo plano activada');
+        const respuesta = postearResultados();
+        event.waitUntil(respuesta);
+    }
+    else{
+        console.log('Sincronización en segundo plano noooooo activada');
     }
 });

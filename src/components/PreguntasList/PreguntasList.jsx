@@ -73,14 +73,7 @@ const PreguntasList = () => {
     };
   
     console.log("Enviando resultado:", resultado);
-  
-    if (!navigator.onLine) {
-      await saveResult(resultado);
-      messageApi.warning("Sin conexión a Internet. Resultados guardados localmente.", 3);
-      navigate("/puntajes");
-      return;
-    }
-  
+    
     try {
       await resultadosService.createResultado(resultado);
       messageApi.success("¡Resultados enviados correctamente!", 3);
