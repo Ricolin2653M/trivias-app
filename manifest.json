@@ -1,26 +1,20 @@
 {
-    "short_name": "AplicacionSGP",
-    "name": "App de Sistema de Gestión de Gastos",
-    "start_url": "index.html",
-    "background_color": "#2148C0",
-    "theme_color": "#2148C0",
+    "name": "Mi Aplicación Trivia",
+    "short_name": "TriviaApp",
+    "description": "Una aplicación de trivias progresiva",
+    "start_url": "/",
     "display": "standalone",
-    "id": "appSGP",
-    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#6a0dad",
+    "form_factor": "wide",
+    "display_override": [
+        "window-controls-overlay",
+        "standalone"
+    ],
     "icons": [
         {
-            "src": "icons/favicon-16x16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/favicon-32x32.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/logo-64x64.png",
-            "sizes": "64x64",
+            "src": "icons/logo-96x96.png",
+            "sizes": "96x96",
             "type": "image/png"
         },
         {
